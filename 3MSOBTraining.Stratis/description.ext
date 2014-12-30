@@ -1,0 +1,20 @@
+// Basics
+author = "1stLt J.Long"; 
+onLoadName = "3MSOB - Camp Lejeune"; 
+onLoadMission = "3MSOB Training - Camp Lejeune"; 
+loadScreen =  "images\3rd-MSOB-logo.jpg";
+respawn = "BASE";
+respawnDelay = 5;
+respawnButton = 1;
+#include "taw_vd\dialog.hpp"
+#include "ASORGS\menu.hpp"
+class CfgFunctions {
+	#include "ASORGS\cfgfunctions.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
+	#include "LVR\functions\functions.hpp"
+};
+class header {
+	gametype = coop;
+	maxplayers = 39;
+	minplayers = 1;
+};

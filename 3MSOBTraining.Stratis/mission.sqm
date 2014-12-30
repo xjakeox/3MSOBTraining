@@ -21,7 +21,8 @@ class Mission
 		"A3_Air_F_Heli_Light_01",
 		"Air_C130J",
 		"a3_map_stratis",
-		"A3_Structures_F_Ind_AirPort"
+		"A3_Structures_F_Ind_AirPort",
+		"A3_Modules_F"
 	};
 	addOnsAuto[]=
 	{
@@ -94,7 +95,7 @@ class Mission
 					leader=1;
 					rank="MAJOR";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
+					text="battCO";
 					description="Battalion CO";
 				};
 				class Item1
@@ -108,7 +109,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
+					text="battXO";
 					description="Battalion XO";
 				};
 			};
@@ -131,7 +132,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
+					text="compCO";
 					description="Company CO";
 				};
 				class Item1
@@ -145,7 +146,7 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
+					text="compXO";
 					description="Company XO";
 				};
 			};
@@ -168,7 +169,6 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Platoon Leader";
 				};
 				class Item1
@@ -182,7 +182,6 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Platoon Sergeant";
 				};
 			};
@@ -205,7 +204,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1 Squad Leader";
 				};
 			};
@@ -228,7 +226,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-A Fireteam Leader";
 				};
 				class Item1
@@ -242,7 +239,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-A 0372 Critical Skills Operator";
 				};
 				class Item2
@@ -256,7 +252,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-A 0372 Critical Skills Operator";
 				};
 				class Item3
@@ -270,7 +265,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-A 0372 Critical Skills Operator";
 				};
 			};
@@ -293,7 +287,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-B Fireteam Leader";
 				};
 				class Item1
@@ -307,7 +300,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-B 0372 Critical Skills Operator";
 				};
 				class Item2
@@ -321,7 +313,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-B 0372 Critical Skills Operator";
 				};
 				class Item3
@@ -335,7 +326,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-1-B 0372 Critical Skills Operator";
 				};
 			};
@@ -358,7 +348,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2 Squad Leader";
 				};
 			};
@@ -381,7 +370,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-B Fireteam Leader";
 				};
 				class Item1
@@ -395,7 +383,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-B 0372 Critical Skills Operator";
 				};
 				class Item2
@@ -409,7 +396,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-B 0372 Critical Skills Operator";
 				};
 				class Item3
@@ -423,7 +409,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-B 0372 Critical Skills Operator";
 				};
 			};
@@ -445,7 +430,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -468,7 +452,6 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-A Fireteam Leader";
 				};
 				class Item1
@@ -482,7 +465,6 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-A 0372 Critical Skills Operator";
 				};
 				class Item2
@@ -495,7 +477,6 @@ class Mission
 					vehicle="MEF_DMARPAT_RS_UL";
 					player="PLAY CDG";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-A 0372 Critical Skills Operator";
 				};
 				class Item3
@@ -508,7 +489,6 @@ class Mission
 					vehicle="MEF_DMARPAT_RS_UL";
 					player="PLAY CDG";
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="1-2-A 0372 Critical Skills Operator";
 				};
 			};
@@ -530,7 +510,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -552,7 +531,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -574,7 +552,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -596,7 +573,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -618,7 +594,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -640,7 +615,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -662,7 +636,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -684,7 +657,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -706,7 +678,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -728,7 +699,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -750,7 +720,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -772,7 +741,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -794,7 +762,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -816,7 +783,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=1;
-					init="removeBackpack player;  removeAllWeapons player;  removeAllItems player;";
 					description="Recruit";
 				};
 			};
@@ -2458,7 +2424,7 @@ class Mission
 			vehicle="MapBoard_stratis_F";
 			skill=0.60000002;
 			text="firingBoard";
-			init="this allowDamage false;";
+			init="this addAction [""<t color='#CC9900'>Teleport - Air Base</t>"",""teleport.sqf"",[""airBaseTeleport""]]; this addAction [""<t color='#CC9900'>Teleport - MOUT Course</t>"",""teleport.sqf"",[""moutTeleport""]];";
 		};
 		class Item172
 		{
@@ -2497,7 +2463,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="firingrangebox2";
-			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
+			init="this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
 		};
 		class Item176
 		{
@@ -2508,7 +2474,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item177
 		{
@@ -2538,7 +2503,6 @@ class Mission
 			side="EMPTY";
 			vehicle="DAR_M1151";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item180
 		{
@@ -2549,7 +2513,6 @@ class Mission
 			side="EMPTY";
 			vehicle="DAR_M1151_Deploy";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item181
 		{
@@ -2560,7 +2523,6 @@ class Mission
 			side="EMPTY";
 			vehicle="DAR_M1151";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item182
 		{
@@ -2571,7 +2533,6 @@ class Mission
 			side="EMPTY";
 			vehicle="DAR_M1151";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item183
 		{
@@ -2583,7 +2544,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="firingrangbox1";
-			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
+			init="this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
 		};
 		class Item184
 		{
@@ -2594,7 +2555,6 @@ class Mission
 			side="EMPTY";
 			vehicle="DAR_M1151_Deploy";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item185
 		{
@@ -2606,7 +2566,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="startingGearbox";
-			init="this allowDamage false;";
+			init="this addAction [""<t color='#0099CC'>Training Gear</t>"",""addtraininggear.sqf""];";
 		};
 		class Item186
 		{
@@ -2618,7 +2578,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="atAmmobox";
-			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
+			init="this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""]; this addAction [""<t color='#0099CC'>AT Gear</t>"",""addatgear.sqf""]; this addAction [""<t color='#0099CC'>Sniping Gear</t>"",""addsnipergear.sqf""]; this addAction [""<t color='#0099CC'>Spotter Gear</t>"",""addspottergear.sqf""];";
 		};
 		class Item187
 		{
@@ -2629,7 +2589,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Transport_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item188
 		{
@@ -2640,7 +2599,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Transport_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item189
 		{
@@ -2662,7 +2620,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Transport_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item191
 		{
@@ -2673,7 +2630,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item192
 		{
@@ -2684,7 +2640,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item193
 		{
@@ -2695,7 +2650,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item194
 		{
@@ -2706,7 +2660,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item195
 		{
@@ -2717,7 +2670,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item196
 		{
@@ -2728,7 +2680,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item197
 		{
@@ -2809,7 +2760,6 @@ class Mission
 			side="EMPTY";
 			vehicle="kyo_MH47E_base";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item205
 		{
@@ -2820,7 +2770,6 @@ class Mission
 			side="EMPTY";
 			vehicle="kyo_MH47E_base";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item206
 		{
@@ -2832,7 +2781,7 @@ class Mission
 			vehicle="MapBoard_stratis_F";
 			skill=0.60000002;
 			text="airBoard";
-			init="this allowDamage false;";
+			init="this addAction [""<t color='#CC9900'>Teleport - Mout Course</t>"",""teleport.sqf"",[""moutTeleport""]]; this addAction [""<t color='#CC9900'>Teleport - Firing Range</t>"",""teleport.sqf"",[""firingRangeTeleport""]];";
 		};
 		class Item207
 		{
@@ -2854,7 +2803,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item209
 		{
@@ -2865,7 +2813,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item210
 		{
@@ -2876,7 +2823,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Plane_CAS_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item211
 		{
@@ -2896,7 +2842,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item213
 		{
@@ -2916,7 +2861,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item215
 		{
@@ -2937,7 +2881,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_armed_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item217
 		{
@@ -2958,7 +2901,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Heli_Light_01_armed_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item219
 		{
@@ -2969,7 +2911,6 @@ class Mission
 			side="EMPTY";
 			vehicle="B_Plane_CAS_01_F";
 			skill=0.60000002;
-			init="_nul = [this, 60, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item220
 		{
@@ -2980,7 +2921,6 @@ class Mission
 			side="EMPTY";
 			vehicle="C130J";
 			skill=0.60000002;
-			init="_nul = [this, 120, 0, LVR_fnc_hunterInit] spawn LVR_fnc_vehRespawn;";
 		};
 		class Item221
 		{
@@ -3042,7 +2982,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="moutAmmobox";
-			init="this allowDamage false; clearweaponcargo this; clearMagazineCargo this; clearItemCargo this;";
+			init="this addAction [""<t color='#0099CC'>MOUT Gear</t>"",""addMoutGear.sqf""];";
 		};
 		class Item227
 		{
@@ -3054,7 +2994,7 @@ class Mission
 			vehicle="MapBoard_stratis_F";
 			skill=0.60000002;
 			text="moutBoard";
-			init="this allowDamage false;";
+			init="this addAction [""<t color='#CC9900'>Teleport - Air Base</t>"",""teleport.sqf"",[""airBaseTeleport""]]; this addAction [""<t color='#CC9900'>Teleport - Firing Range</t>"",""teleport.sqf"",[""firingRangeTeleport""]];";
 		};
 	};
 	class Markers

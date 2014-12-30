@@ -85,7 +85,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={6485.2236,7.7133889,5383.3223};
+					position[]={6485.271,7.7137403,5383.252};
 					azimut=387.522;
 					offsetY=0.00143909;
 					id=0;
@@ -790,7 +790,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=228;
+		items=236;
 		class Item0
 		{
 			position[]={1717.89,0,5146.5801};
@@ -1497,6 +1497,7 @@ class Mission
 			side="EMPTY";
 			vehicle="TargetP_Inf2_F";
 			skill=0.60000002;
+			init="this setObjectTexture [0, ""#(rgb,8,8,3)color(0,1,0,1)""];";
 		};
 		class Item72
 		{
@@ -2335,7 +2336,7 @@ class Mission
 		};
 		class Item162
 		{
-			position[]={6374.5898,0,5357.04};
+			position[]={6355.6201,8.0709496,5341.3921};
 			azimut=0.00178987;
 			id=201;
 			side="EMPTY";
@@ -2653,7 +2654,7 @@ class Mission
 		};
 		class Item194
 		{
-			position[]={6358.0098,-0.060738601,5514.3501};
+			position[]={6306.123,4.2185936,5418.0952};
 			azimut=206.571;
 			offsetY=0.012866;
 			id=233;
@@ -2663,8 +2664,8 @@ class Mission
 		};
 		class Item195
 		{
-			position[]={6375.04,-0.0186434,5519.3301};
-			azimut=266.62601;
+			position[]={6280.2896,9.7118511,5417.3115};
+			azimut=183.11879;
 			offsetY=0.050053801;
 			id=234;
 			side="EMPTY";
@@ -2673,8 +2674,8 @@ class Mission
 		};
 		class Item196
 		{
-			position[]={6389.21,-0.0271444,5507.9702};
-			azimut=289.534;
+			position[]={6296.9663,6.09059,5395.9238};
+			azimut=156.76079;
 			offsetY=0.062905103;
 			id=235;
 			side="EMPTY";
@@ -2982,7 +2983,7 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="moutAmmobox";
-			init="this addAction [""<t color='#0099CC'>MOUT Gear</t>"",""addMoutGear.sqf""];";
+			init="this addAction [""<t color='#0099CC'>MOUT Gear</t>"",""addMoutGear.sqf""]; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
 		};
 		class Item227
 		{
@@ -2995,6 +2996,83 @@ class Mission
 			skill=0.60000002;
 			text="moutBoard";
 			init="this addAction [""<t color='#CC9900'>Teleport - Air Base</t>"",""teleport.sqf"",[""airBaseTeleport""]]; this addAction [""<t color='#CC9900'>Teleport - Firing Range</t>"",""teleport.sqf"",[""firingRangeTeleport""]];";
+		};
+		class Item228
+		{
+			position[]={6371.3643,8.1310797,5318.4888};
+			azimut=0.00178987;
+			id=267;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item229
+		{
+			position[]={6379.4106,8.0600004,5359.1167};
+			azimut=359.99799;
+			offsetY=-9.5367398e-007;
+			id=268;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item230
+		{
+			position[]={6373.2749,8.0600004,5352.1274};
+			azimut=0.00178987;
+			id=269;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item231
+		{
+			position[]={6390.8628,8.0528431,5348.7388};
+			azimut=359.99799;
+			offsetY=-9.5367398e-007;
+			id=270;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item232
+		{
+			position[]={1711.7672,5.5,5155.7246};
+			azimut=193.61392;
+			id=271;
+			side="EMPTY";
+			vehicle="TargetP_Inf2_F";
+			skill=0.60000002;
+		};
+		class Item233
+		{
+			position[]={1734.0923,5.5,5163.9927};
+			azimut=154.37;
+			id=272;
+			side="EMPTY";
+			vehicle="TargetP_Inf2_F";
+			skill=0.60000002;
+			init="this setObjectTexture [0, ""#(rgb,8,8,3)color(0,1,0,1)""];";
+		};
+		class Item234
+		{
+			position[]={6278.668,11.279356,5396.6748};
+			azimut=156.76079;
+			offsetY=0.062905103;
+			id=273;
+			side="EMPTY";
+			vehicle="B_MBT_01_cannon_F";
+			skill=0.60000002;
+		};
+		class Item235
+		{
+			position[]={6314.2617,8.9554567,5382.3877};
+			azimut=156.76079;
+			offsetY=0.062905103;
+			id=274;
+			side="EMPTY";
+			vehicle="B_MBT_01_cannon_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers

@@ -5,6 +5,8 @@ enableTeamswitch false;
 //Mapping for command staff that need time jump
 _timeJumpPlayer = [ "battCO", "battXO", "compCO", "compXO" ];
 
+waitUntil { !isNull player || isServer }; // waitUntil the player variable exists 
+
 //Server Logic
 if ( isServer ) then
 {

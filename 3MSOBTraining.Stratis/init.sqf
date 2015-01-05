@@ -6,7 +6,6 @@ enableTeamswitch false;
 _timeJumpPlayer = [ "battCO", "battXO", "compCO", "compXO" ];
 
 waitUntil { !isNull player || isServer }; // waitUntil the player variable exists 
-
 //Server Logic
 if ( isServer ) then
 {

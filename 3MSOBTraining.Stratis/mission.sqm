@@ -3,7 +3,6 @@ class Mission
 {
 	addOns[]=
 	{
-		"mef_mod",
 		"mbg_killhouses_a3",
 		"A3_Structures_F_Training",
 		"A3_Structures_F_Furniture",

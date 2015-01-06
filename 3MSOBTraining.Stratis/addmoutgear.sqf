@@ -20,3 +20,4 @@ player addMagazine "AGM_M84";
 player addItem "AGM_EarBuds";
 player addItem "acc_flashlight";
 player addItem "tf_anprc152_2";
+player assignItem "tf_anprc152_2";

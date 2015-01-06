@@ -14,7 +14,7 @@ _playermags = ["AGM_HandFlare_Base","30Rnd_mas_556x45_T_Stanag","30Rnd_mas_556x4
 {
 	player addMagazine _x;
 } forEach (_playermags);
-player addBackpack "MEF_Des_Assault";
+player addBackpack "B_mas_AssaultPack_des";
 player addMagazine "mas_MAAWS";
 player addMagazine "mas_MAAWS";
 player addMagazine "mas_MAAWS";

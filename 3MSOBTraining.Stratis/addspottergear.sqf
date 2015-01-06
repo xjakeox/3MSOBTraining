@@ -8,7 +8,7 @@ sleep 2;
 private ["_playeritems", "_playermags"];
 _playeritems = ["AGM_MapTools","tf_anprc152_2","AGM_ItemKestrel","muzzle_mas_snds_M","AGM_EarBuds","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Morphine","AGM_Morphine","AGM_Morphine","AGM_Epipen","AGM_Epipen","AGM_Epipen","AGM_Bloodbag","AGM_Bloodbag","AGM_Bloodbag"];
 _playermags = ["30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","1Rnd_Smoke_Grenade_shell","15Rnd_mas_9x21_Mag","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"];
-player addBackpack "MEF_Des_Assault";
+player addBackpack "B_mas_AssaultPack_des";
 {
 	player addItem _x;
 } forEach (_playeritems);

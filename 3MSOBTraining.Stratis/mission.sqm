@@ -22,7 +22,8 @@ class Mission
 		"a3_map_stratis",
 		"A3_Structures_F_Ind_AirPort",
 		"A3_Modules_F",
-		"mas_usa_devg_b"
+		"mas_usa_devg_b",
+		"mas_usa_usoc_veh"
 	};
 	addOnsAuto[]=
 	{
@@ -44,6 +45,7 @@ class Mission
 		"A3_Air_F_Heli_Light_01",
 		"Air_C130J",
 		"A3_Structures_F_Ind_AirPort",
+		"mas_usa_usoc_veh",
 		"a3_map_stratis"
 	};
 	randomSeed=64099;
@@ -790,7 +792,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=236;
+		items=244;
 		class Item0
 		{
 			position[]={1717.89,0,5146.5801};
@@ -3073,6 +3075,78 @@ class Mission
 			id=274;
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
+			skill=0.60000002;
+		};
+		class Item236
+		{
+			position[]={1829.6649,5.5,5756.9946};
+			azimut=106.09017;
+			id=275;
+			side="EMPTY";
+			vehicle="B_mas_usr_Heli_Light_01_armed_F";
+			skill=0.60000002;
+		};
+		class Item237
+		{
+			position[]={1833.7361,5.5,5777.7979};
+			azimut=284.38513;
+			id=276;
+			side="EMPTY";
+			vehicle="B_mas_usr_CH_47F";
+			skill=0.60000002;
+		};
+		class Item238
+		{
+			position[]={1839.796,5.5,5799.0073};
+			azimut=105.87397;
+			id=277;
+			side="EMPTY";
+			vehicle="B_mas_usr_Heli_Light_01_F";
+			skill=0.60000002;
+		};
+		class Item239
+		{
+			position[]={1844.774,5.5,5820.6504};
+			azimut=108.57992;
+			id=278;
+			side="EMPTY";
+			vehicle="B_mas_usr_UH60M";
+			skill=0.60000002;
+		};
+		class Item240
+		{
+			position[]={1849.752,5.5,5838.5059};
+			azimut=108.57992;
+			id=279;
+			side="EMPTY";
+			vehicle="B_mas_usr_UH60M";
+			skill=0.60000002;
+		};
+		class Item241
+		{
+			position[]={1821.9877,5.5,5736.7036};
+			azimut=108.0712;
+			id=280;
+			side="EMPTY";
+			vehicle="B_mas_usr_UH60M_MEV";
+			skill=0.60000002;
+		};
+		class Item242
+		{
+			position[]={1816.2097,5.5,5711.5288};
+			azimut=107.89168;
+			id=281;
+			side="EMPTY";
+			vehicle="B_mas_usr_UH60M_SF";
+			skill=0.60000002;
+		};
+		class Item243
+		{
+			position[]={1807.8182,5.5,5686.7666};
+			azimut=106.21517;
+			id=282;
+			side="EMPTY";
+			vehicle="B_mas_usr_Heli_Transport_01_F";
 			skill=0.60000002;
 		};
 	};

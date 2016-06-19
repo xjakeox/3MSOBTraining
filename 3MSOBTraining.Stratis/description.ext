@@ -1,15 +1,13 @@
 // Basics
-author = "1stLt J.Long"; 
-onLoadName = "3MSOB - Camp Lejeune"; 
-onLoadMission = "3MSOB Training - Camp Lejeune"; 
-loadScreen =  "images\3rd-MSOB-logo.jpg";
+author = "GySgt J.Long"; 
+onLoadName = "26th MEU - Camp Lejeune"; 
+onLoadMission = "26th MEU - Camp Lejeune"; 
+loadScreen =  "images\26th.jpg";
 respawn = "BASE";
 respawnDelay = 5;
 respawnButton = 1;
 #include "taw_vd\dialog.hpp"
-#include "ASORGS\menu.hpp"
 class CfgFunctions {
-	#include "ASORGS\cfgfunctions.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
 };
 class header {

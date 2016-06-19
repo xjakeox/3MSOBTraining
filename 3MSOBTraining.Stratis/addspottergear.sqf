@@ -1,22 +1,44 @@
 //addspottergear.sqf
-//1stLt J.Long
-
-removeBackpack player;
-removeAllWeapons player;
-removeAllItems player;
+//By GySgt J.Long
+this = player;
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
 sleep 2;
-private ["_playeritems", "_playermags"];
-_playeritems = ["AGM_MapTools","tf_anprc152_2","AGM_ItemKestrel","muzzle_mas_snds_M","AGM_EarBuds","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Morphine","AGM_Morphine","AGM_Morphine","AGM_Epipen","AGM_Epipen","AGM_Epipen","AGM_Bloodbag","AGM_Bloodbag","AGM_Bloodbag"];
-_playermags = ["30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","30Rnd_mas_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","UGL_FlareRed_F","1Rnd_Smoke_Grenade_shell","15Rnd_mas_9x21_Mag","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"];
-player addBackpack "B_mas_AssaultPack_des";
-{
-	player addItem _x;
-} forEach (_playeritems);
-{
-	player addMagazine _x;
-} forEach (_playermags);
-player addWeapon "arifle_mas_m4_m203";
-player addPrimaryWeaponItem "optic_mas_Arco_blk";
-player addWeapon "hgun_mas_m9_F";
-player assignItem "tf_anprc152_2";
-player addWeapon "AGM_Vector";
+this forceAddUniform "rhs_uniform_FROG01_wd";
+for "_i" from 1 to 3 do {this addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+this addVest "rhsusf_spc_light";
+this addItemToVest "ACE_EarPlugs";
+for "_i" from 1 to 4 do {this addItemToVest "ACE_CableTie";};
+for "_i" from 1 to 6 do {this addItemToVest "ACE_elasticBandage";};
+for "_i" from 1 to 2 do {this addItemToVest "ACE_epinephrine";};
+for "_i" from 1 to 4 do {this addItemToVest "ACE_morphine";};
+for "_i" from 1 to 4 do {this addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_m67";};
+this addBackpack "rhsusf_assault_eagleaiii_coy";
+this addItemToBackpack "ACE_EntrenchingTool";
+this addItemToBackpack "ACE_Kestrel4500";
+this addItemToBackpack "ACE_RangeCard";
+this addItemToBackpack "ACE_SpottingScope";
+this addItemToBackpack "ACE_Tripod";
+this addItemToBackpack "ACE_DAGR";
+this addHeadgear "rhsusf_lwh_helmet_marpatwd";
+this addGoggles "rhs_googles_clear";
+this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+this addPrimaryWeaponItem "rhsusf_acc_ACOG_pip";
+this addWeapon "rhsusf_weap_m9";
+this addWeapon "ACE_Vector";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ACE_Altimeter";
+this linkItem "tf_anprc152_4";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_OPFOR";

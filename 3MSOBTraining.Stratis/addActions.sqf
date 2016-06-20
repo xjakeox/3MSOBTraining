@@ -1,5 +1,5 @@
 //addactions.sqf
-//1stLt J.Long
+//GySgt J.Long
 
 //Firing Board Whiteboard
 firingBoard addAction ["<t color='#CC9900'>Teleport - Air Base</t>","teleport.sqf",["airBaseTeleport"]];

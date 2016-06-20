@@ -1,22 +1,30 @@
 //addsnipergear.sqf
-//1stLt J.Long
-
-removeBackpack player;
-removeAllWeapons player;
-removeAllItems player;
+//By GySgt J.Long
+this = player;
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
 sleep 2;
-private ["_playeritems", "_playermags"];
-_playeritems = ["tf_anprc152_2","AGM_MapTools","AGM_ItemKestrel","AGM_EarBuds","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Bandage","AGM_Morphine","AGM_Morphine","AGM_Morphine","AGM_Epipen","AGM_Epipen","AGM_Epipen","AGM_Bloodbag","AGM_Bloodbag","AGM_Bloodbag"];
-_playermags = ["5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","5Rnd_mas_762x51_T_Stanag","15Rnd_mas_9x21_Mag","15Rnd_mas_9x21_Mag"];
-player addBackpack "B_mas_AssaultPack_des";
-{
-	player addItem _x;
-} forEach (_playeritems);
-{
-	player addMagazine _x;
-} forEach (_playermags);
-player addWeapon "srifle_mas_m24_d";
-player addPrimaryWeaponItem "optic_mas_zeiss";
-player addWeapon "hgun_mas_m9_F";
-player assignItem "tf_anprc152_2";
-player addWeapon "AGM_Vector";
+this forceAddUniform "rhs_uniform_FROG01_wd";
+for "_i" from 1 to 3 do {this addItemToUniform "rhsusf_5Rnd_300winmag_xm2010";};
+this addVest "rhsusf_spc_marksman";
+for "_i" from 1 to 4 do {this addItemToVest "rhsusf_5Rnd_300winmag_xm2010";};
+for "_i" from 1 to 4 do {this addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
+this addBackpack "rhsusf_assault_eagleaiii_coy";
+this addHeadgear "rhsusf_lwh_helmet_marpatwd";
+this addGoggles "rhs_googles_clear";
+this addWeapon "rhs_weap_XM2010";
+this addPrimaryWeaponItem "ACE_optic_SOS_PIP";
+this addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+this addWeapon "rhsusf_weap_m9";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ACE_Altimeter";
+this linkItem "tf_anprc152_3";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_OPFOR";

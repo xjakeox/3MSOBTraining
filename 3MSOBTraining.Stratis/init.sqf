@@ -33,9 +33,7 @@ if ( local player ) then
 	removeBackpack player;
 	removeAllWeapons player;
 	removeAllItems player;
-	
-	[ player , "3MSOB_PATCH" ] call BIS_fnc_setUnitInsignia;
-	
+	execVM addstartinggear.sqf;
 	//Loop through approved rosters and attach time jump to those players
 	{
 		if ( format ["%1", player] == _x ) then { player call compile preprocessFileLineNumbers "DGF_TimeJump\DGF_TimeJumpClientInit.sqf"; };

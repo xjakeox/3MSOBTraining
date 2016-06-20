@@ -2539,7 +2539,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={1717.7662,5.5,5166.3369};
@@ -2561,6 +2561,16 @@ class Mission
 			age="UNKNOWN";
 			expCond="SST_resetpop";
 			expActiv="{_x setDamage 0; _x animate[""terc"", 0]} forEach laneTargets; SST_resetpop = false; publicVariable ""SST_resetpop"";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={1722.3663,5.5,5164.9951};
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="null = execVM ""testdoor.sqf"";";
 			class Effects
 			{
 			};
